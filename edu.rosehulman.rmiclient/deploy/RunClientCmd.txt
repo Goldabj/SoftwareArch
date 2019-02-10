@@ -1,0 +1,8 @@
+java -Djava.rmi.server.useCodebaseOnly=false 
+     -Djava.rmi.server.codebase="http://localhost:8080/rmiclient.jar" 
+     -Djava.security.policy=client.policy 
+     -jar rmiclient.jar localhost 45
+
+
+Online Liner (Using HTTP):
+java -Djava.rmi.server.useCodebaseOnly=false -Djava.rmi.server.codebase="http://localhost:8080/rmiclient.jar" -Djava.security.policy=client.policy -jar rmiclient.jar localhost 45

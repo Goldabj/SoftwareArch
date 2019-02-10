@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GreetingService
+Bundle-SymbolicName: edu.rosehulman.GreetingService
+Bundle-Version: 1.0.0.alpha
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: edu.rosehulman.GreetingService
+Import-Package: org.osgi.framework;version="1.8.0"
+Bundle-Activator: edu.rosehulman.GreetingService.impl.GreetingActivator

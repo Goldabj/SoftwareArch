@@ -1,0 +1,17 @@
+To Start RMIRegistry:
+
+Desktop\shared> start rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false [Windows]
+Desktop\shared]# rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false	    [Unix/Linux/Mac]
+
+
+To Start the Server:
+
+java -Djava.rmi.server.useCodebaseOnly=false 
+     -Djava.rmi.server.codebase="http://localhost:8080/rmiserver.jar" 
+     -Djava.rmi.server.hostname=localhost 
+     -Djava.security.policy=server.policy 
+     -jar rmiserver.jar
+
+
+One Liner (Using HTTP - Use This):
+java -Djava.rmi.server.useCodebaseOnly=false -Djava.rmi.server.codebase="http://localhost:8080/rmiserver.jar" -Djava.rmi.server.hostname=localhost -Djava.security.policy=server.policy -jar rmiserver.jar
